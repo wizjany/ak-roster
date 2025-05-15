@@ -1,0 +1,54 @@
+name: Update Game Data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 * * * *'
+
+
+jobs:
+  run_update_scripts:
+    name: Run update scripts
+    runs-on: ubuntu-latest
+    steps:
+      # see if the branch already exists
+      - name: check-branch
+        run: |
+          if [ git ls-remote --heads --quiet --exit-code refs/heads/actions/update-game-data > /dev/null ]; then
+            echo "::set-output name=target-branch::actions/update-game-data"
+          else
+            echo "::set-output name=target-branch::main"
+          fi
+      # checkout the branch if it does, otherwise main
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.check-branch.target-branch }}
+      # create the branch if it didn't exist
+      - run: git checkout -b actions/update-game-data
+        if: steps.check-branch.target-branch == 'main'
+      # setup the project
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      # grab submodule hashes (debug info for now)
+      - name: before-hashes
+        run: |
+          echo "::set-output name=yostar_hash::$(git rev-parse HEAD:scripts/ArknightsGameData_YoStar)"
+          echo "::set-ouput name=cn_hash::$(git rev-parse HEAD:scripts/ArknightsGameData)"
+      # run update scripts
+      - run: yarn update:all
+      # submodule hashes again
+      - name: after-hashes
+        run: |
+          echo "::set-output name=yostar_hash::$(git rev-parse HEAD:scripts/ArknightsGameData_YoStar)"
+          echo "::set-ouput name=cn_hash::$(git rev-parse HEAD:scripts/ArknightsGameData)"
+      # commit changes and PR, but only if krooster data files changed (i.e. skip submodule-only updates)
+      - run: |
+          git add -A
+          if ! git diff --ignore-submodules --cached --quiet; then
+            git commit -m "Update game data." -m "CN: ${{ steps.before-hashes.cn_hash }} -> ${{ steps.after-hashes.cn_hash }}, Yostar: ${{ steps.before-hashes.yostar_hash }} -> ${{ steps.after-hashes.yostar_hash }}"
+            gh pr create -B main --fill || true
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
