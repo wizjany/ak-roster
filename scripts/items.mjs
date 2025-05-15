@@ -7,11 +7,9 @@ import cnBuildingData from "./ArknightsGameData/zh_CN/gamedata/excel/building_da
 import cnItemTable from "./ArknightsGameData/zh_CN/gamedata/excel/item_table.json" assert { type: "json" };
 
 const unofficialItemNameTranslations = {
-  mod_update_token_1: "Supplementary Data Bar",
-  mod_update_token_2: "Supplementary Data Instrument",
-  30155: "Sintered Core Crystals",
-  31063: "Transmuted Salt Cluster",
-  31064: "Transmuted Salt Block",
+  30165: "Biphasic Enantiomorphic Medium",
+  31093: "Pseudocondensation Nucleus",
+  31094: "Chiral Refractor",
 };
 
 const getEnglishItemName = (itemId) => {
