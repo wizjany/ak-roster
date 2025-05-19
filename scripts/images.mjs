@@ -10,7 +10,7 @@ const tasks = [
   {
     sourceDir: path.join(ACESHIP_ROOT, "skills"),
     destDir: "public/img/skills",
-    filter: (filename) => filename.endsWith(".png") && filename.startsWith("skchr_"),
+    filter: (filename) => filename.endsWith(".png") && filename.startsWith("skill_icon_skchr_"),
     replace: (filename) => filename.replace(/^skill_icon_/, ""),
   },
   {
@@ -83,15 +83,17 @@ const uploadAllImages = async () => {
         await fs.mkdir(task.destDir, { recursive: true });
         const rawFileNames = await fs.readdir(task.destDir, { withFileTypes: true });
         const existingImageIDs = new Set();
-        rawFileNames.forEach((value) => existingImageIDs.add(value));
+        rawFileNames
+          .filter(value => value.name.endsWith('.png'))
+          .forEach((value) => existingImageIDs.add(value));
 
-        // console.log(`images: found ${existingImageIDs.size} existing images in ${task.destDir}.`);
+        console.log(`images: found ${existingImageIDs.size} existing images in ${task.destDir}.`);
 
         return upload(existingImageIDs, task);
       })
     );
     const totalUploadCount = uploadCounts.reduce((acc, cur) => acc + cur, 0);
-    console.log(`images: found ${totalUploadCount} total files, done.`);
+    console.log(`images: found ${totalUploadCount} new files, done.`);
   } catch (e) {
     console.error(e);
   }

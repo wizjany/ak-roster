@@ -83,6 +83,23 @@ jobs:
           cache-dependency-path: main-repo/yarn.lock
       - name: Run images script
         run: cd main-repo && yarn install --frozen-lockfile && yarn update:images
+      - name: Cache images
+        uses: actions/cache@v3
+        with:
+          key: images-${{ hashFiles('public/img/**/*.png', 'public/img/**/*.webp') }}
+          restore-keys: images-
+          path: 'public/img'
+      - name: Create webp copies (ImageMagick version)
+        run: |
+          sudo apt-get update && sudo apt install -y imagemagick
+          cd main-repo/public/img
+          find . -name '*.png' -type f -exec mogrify -format webp -quality 80 {} +
+      - name: Create webp copies (libwebp version)
+        if: ${{ false }}
+        run: |
+          sudo apt-get update && sudo apt install -y webp
+          cd main-repo/public/img
+          find . -name '*.png' -type f -exec sh -c 'for f in $@; do b=${f##*/}; cwebp -q 80 "$f" -o "${b%.png}"; done' ) {} +
       - name: Sync to S3
         run: |
           cd main-repo/public/img
