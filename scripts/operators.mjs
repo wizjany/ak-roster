@@ -2,14 +2,14 @@
 import path from "path";
 import { fileURLToPath } from "url";
 
-import enCharacterPatchTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json" with { type: "json" };
-import enCharacterTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json" with { type: "json" };
-import enSkillTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json" with { type: "json" };
-import enUniequipTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json" with { type: "json" };
-import cnCharacterPatchTable from "./ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json" with { type: "json" };
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" with { type: "json" };
-import cnSkillTable from "./ArknightsGameData/zh_CN/gamedata/excel/skill_table.json" with { type: "json" };
-import cnUniequipTable from "./ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json" with { type: "json" };
+import enCharacterPatchTable from "./ArknightsGamedata/en/gamedata/excel/char_patch_table.json" with { type: "json" };
+import enCharacterTable from "./ArknightsGamedata/en/gamedata/excel/character_table.json" with { type: "json" };
+import enSkillTable from "./ArknightsGamedata/en/gamedata/excel/skill_table.json" with { type: "json" };
+import enUniequipTable from "./ArknightsGamedata/en/gamedata/excel/uniequip_table.json" with { type: "json" };
+import cnCharacterPatchTable from "./ArknightsGamedata/cn/gamedata/excel/char_patch_table.json" with { type: "json" };
+import cnCharacterTable from "./ArknightsGamedata/cn/gamedata/excel/character_table.json" with { type: "json" };
+import cnSkillTable from "./ArknightsGamedata/cn/gamedata/excel/skill_table.json" with { type: "json" };
+import cnUniequipTable from "./ArknightsGamedata/cn/gamedata/excel/uniequip_table.json" with { type: "json" };
 
 const enPatchCharacters = enCharacterPatchTable.patchChars;
 const cnPatchCharacters = cnCharacterPatchTable.patchChars;

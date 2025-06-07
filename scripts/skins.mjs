@@ -2,9 +2,9 @@
 import path from "path";
 import { fileURLToPath } from "url";
 
-import enSkinTable from "./ArknightsGameData_YoStar/en_US/gamedata/excel/skin_table.json" with { type: "json" };
-import cnSkinTable from "./ArknightsGameData/zh_CN/gamedata/excel/skin_table.json" with { type: "json" };
-import cnCharacterTable from "./ArknightsGameData/zh_CN/gamedata/excel/character_table.json" with { type: "json" };
+import enSkinTable from "./ArknightsGamedata/en/gamedata/excel/skin_table.json" with { type: "json" };
+import cnSkinTable from "./ArknightsGamedata/cn/gamedata/excel/skin_table.json" with { type: "json" };
+import cnCharacterTable from "./ArknightsGamedata/cn/gamedata/excel/character_table.json" with { type: "json" };
 
 const isOperator = (charId) => {
   const operator = cnCharacterTable[charId];
