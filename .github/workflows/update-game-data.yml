@@ -59,6 +59,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   update-images:
+    if: ${{ false }}
     name: Update image assets
     runs-on: ubuntu-latest
     steps:
