@@ -960,7 +960,7 @@
     },
     {
       "skinId": "char_301_cutter@marthe#8",
-      "skinName": "拭刀",
+      "skinName": "Wiping Knife",
       "avatarId": "char_301_cutter_marthe#8",
       "sortId": 211
     }
@@ -1800,7 +1800,7 @@
     },
     {
       "skinId": "char_4119_wanqin@epoque#41",
-      "skinName": "万顷阳光",
+      "skinName": "Tons of Sunshine",
       "avatarId": "char_4119_wanqin_epoque#41",
       "sortId": 103
     }
@@ -3514,7 +3514,7 @@
     },
     {
       "skinId": "char_4114_harold@snow#7",
-      "skinName": "邀雪",
+      "skinName": "Inviting Snow",
       "avatarId": "char_4114_harold_snow#7",
       "sortId": 260
     }
@@ -3793,6 +3793,12 @@
       "skinName": null,
       "avatarId": "char_4137_udflow_2",
       "sortId": -1
+    },
+    {
+      "skinId": "char_4137_udflow@epoque#46",
+      "skinName": "层流",
+      "avatarId": "char_4137_udflow_epoque#46",
+      "sortId": 111
     }
   ],
   "char_201_moeshd": [
