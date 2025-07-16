@@ -5965,6 +5965,20 @@
       "sortId": 323
     }
   ],
+  "char_4195_radian": [
+    {
+      "skinId": "char_4195_radian#1",
+      "skinName": null,
+      "avatarId": "char_4195_radian",
+      "sortId": -3
+    },
+    {
+      "skinId": "char_4195_radian#2",
+      "skinName": null,
+      "avatarId": "char_4195_radian_2",
+      "sortId": -1
+    }
+  ],
   "char_1012_skadi2": [
     {
       "skinId": "char_1012_skadi2#1",

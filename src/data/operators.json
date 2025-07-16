@@ -104659,6 +104659,53 @@
       }
     ]
   },
+  "char_4195_radian": {
+    "id": "char_4195_radian",
+    "name": "Raidian",
+    "cnName": "电弧",
+    "rarity": 6,
+    "class": "Supporter",
+    "branch": "Summoner",
+    "isCnOnly": true,
+    "skillData": [],
+    "moduleData": [
+      {
+        "moduleName": "电弧特勤证章",
+        "moduleId": "uniequip_002_radian",
+        "typeName": "SO-A",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [],
+            "name": "Module SO-A Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [],
+            "name": "Module SO-A Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [],
+            "name": "Module SO-A Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "攻击力+24",
+      "第二天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [],
+    "eliteLevels": []
+  },
   "char_1012_skadi2": {
     "id": "char_1012_skadi2",
     "name": "Skadi the Corrupting Heart",
