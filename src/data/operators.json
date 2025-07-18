@@ -28789,12 +28789,12 @@
     "rarity": 5,
     "class": "Vanguard",
     "branch": "Agent",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skillData": [
       {
         "skillId": "skchr_surfer_1",
         "iconId": null,
-        "skillName": "探寻",
+        "skillName": "Search and Seek",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -28858,7 +28858,7 @@
       {
         "skillId": "skchr_surfer_2",
         "iconId": null,
-        "skillName": "洞悉",
+        "skillName": "Quick Learner",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -28996,11 +28996,11 @@
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-4秒",
-      "攻击速度+5",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -4 sec",
+      "ASPD +5",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -39030,7 +39030,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "旧背包",
+        "moduleName": "Old Backpack",
         "moduleId": "uniequip_002_odda",
         "typeName": "HAM-X",
         "stages": [
@@ -39100,7 +39100,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -77129,12 +77129,12 @@
     "rarity": 5,
     "class": "Supporter",
     "branch": "Abjurer",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skillData": [
       {
         "skillId": "skchr_xingzh_1",
         "iconId": null,
-        "skillName": "盈帙满笥",
+        "skillName": "Filled Tomes, Spilling Sheets",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -77198,7 +77198,7 @@
       {
         "skillId": "skchr_xingzh_2",
         "iconId": null,
-        "skillName": "食不厌精",
+        "skillName": "Fine Food, Soothed Souls",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -77262,7 +77262,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "别昔年",
+        "moduleName": "Farewell to the Old Days",
         "moduleId": "uniequip_002_xingzh",
         "typeName": "BLS-X",
         "stages": [
@@ -77332,15 +77332,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-10秒",
-      "部署费用-1",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -10 sec",
+      "DP Cost -1",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -97777,7 +97777,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "夕特限证章",
+        "moduleName": "Dusk's Specialized Badge",
         "moduleId": "uniequip_004_dusk",
         "typeName": "ISW-A",
         "stages": [
@@ -97815,7 +97815,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -99696,7 +99696,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "“情与义”",
+        "moduleName": "The Compassionate and the Just",
         "moduleId": "uniequip_003_lin",
         "typeName": "PLX-Y",
         "stages": [
@@ -99766,7 +99766,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -101809,12 +101809,12 @@
     "rarity": 6,
     "class": "Caster",
     "branch": "Primal",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skillData": [
       {
         "skillId": "skchr_blaze2_1",
         "iconId": null,
-        "skillName": "炙手之援",
+        "skillName": "Hand in Heated Hand",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -101878,7 +101878,7 @@
       {
         "skillId": "skchr_blaze2_2",
         "iconId": null,
-        "skillName": "沸血燎原",
+        "skillName": "Boiling Blood Ablaze",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -101942,7 +101942,7 @@
       {
         "skillId": "skchr_blaze2_3",
         "iconId": null,
-        "skillName": "众恶的焚场",
+        "skillName": "Pyre of Perdition",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -102006,11 +102006,11 @@
     ],
     "moduleData": [],
     "potentials": [
-      "部署费用-1",
-      "第二天赋效果增强",
-      "攻击力+31",
-      "第一天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Improves Second Talent",
+      "ATK +31",
+      "Improves First Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -122732,7 +122732,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "森蚺特限证章",
+        "moduleName": "Eunectes's Specialized Badge",
         "moduleId": "uniequip_004_zumama",
         "typeName": "RA-A",
         "stages": [
@@ -122770,7 +122770,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -124308,12 +124308,12 @@
     "rarity": 6,
     "class": "Defender",
     "branch": "Primal Protector",
-    "isCnOnly": true,
+    "isCnOnly": false,
     "skillData": [
       {
         "skillId": "skchr_yu_1",
         "iconId": null,
-        "skillName": "今日做东",
+        "skillName": "Today's Host",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -124377,7 +124377,7 @@
       {
         "skillId": "skchr_yu_2",
         "iconId": null,
-        "skillName": "厚礼上宾",
+        "skillName": "For Guests, Bounteous Gifts",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -124441,7 +124441,7 @@
       {
         "skillId": "skchr_yu_3",
         "iconId": null,
-        "skillName": "灶里乾坤",
+        "skillName": "Enter the Stove's Palm",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -124505,11 +124505,11 @@
     ],
     "moduleData": [],
     "potentials": [
-      "部署费用-1",
-      "第一天赋效果增强",
-      "生命上限+270",
-      "第二天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Improves First Talent",
+      "Max HP +270",
+      "Improves Second Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -128114,7 +128114,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "晴雨",
+        "moduleName": "Rain or Shine",
         "moduleId": "uniequip_002_pepe",
         "typeName": "HAM-X",
         "stages": [
@@ -128184,7 +128184,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -132809,7 +132809,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "秉烛人的记录",
+        "moduleName": "'Who is he?'",
         "moduleId": "uniequip_003_zuole",
         "typeName": "SBL-Y",
         "stages": [
@@ -132879,7 +132879,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [

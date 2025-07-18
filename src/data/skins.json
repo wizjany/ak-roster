@@ -4350,7 +4350,7 @@
     },
     {
       "skinId": "char_4105_almond@epoque#38",
-      "skinName": "“杏仁”拼盘",
+      "skinName": "Almond Platter",
       "avatarId": "char_4105_almond_epoque#38",
       "sortId": 97
     }
@@ -4864,7 +4864,7 @@
     },
     {
       "skinId": "char_369_bena@epoque#38",
-      "skinName": "草原小帮手",
+      "skinName": "Prairie Pals",
       "avatarId": "char_369_bena_epoque#38",
       "sortId": 98
     }
@@ -6696,7 +6696,7 @@
     },
     {
       "skinId": "char_2025_shu@nian#11",
-      "skinName": "春日宴",
+      "skinName": "Spring Feast",
       "avatarId": "char_2025_shu_nian#11",
       "sortId": 139
     }
@@ -7276,7 +7276,7 @@
     },
     {
       "skinId": "char_4121_zuole@nian#11",
-      "skinName": "少年游",
+      "skinName": "Youthful Journey",
       "avatarId": "char_4121_zuole_nian#11",
       "sortId": 140
     }
